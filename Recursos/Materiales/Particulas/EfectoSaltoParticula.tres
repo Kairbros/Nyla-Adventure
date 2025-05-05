@@ -1,0 +1,19 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=3 uid="uid://dqa5xexoxpm5e"]
+
+[sub_resource type="Curve" id="Curve_y27uu"]
+max_value = 1.5
+_data = [Vector2(0, 0.752241), 0.0, 1.45775, 0, 1, Vector2(0.512953, 1.5), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.07979, 0.0, 1, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_rmshs"]
+curve = SubResource("Curve_y27uu")
+
+[resource]
+lifetime_randomness = 1.0
+direction = Vector3(0, 0, 0)
+spread = 180.0
+flatness = 1.0
+initial_velocity_min = -10.0
+initial_velocity_max = -10.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_rmshs")

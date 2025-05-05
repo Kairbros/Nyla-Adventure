@@ -1,0 +1,17 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=3 uid="uid://b1uvr1bbme1pg"]
+
+[sub_resource type="Curve" id="Curve_imqfo"]
+_data = [Vector2(0, 0.99812), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.36539, -2.36539, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_jqdrw"]
+curve = SubResource("Curve_imqfo")
+
+[resource]
+lifetime_randomness = 1.0
+emission_shape = 3
+emission_box_extents = Vector3(0.4, 0, 0.4)
+direction = Vector3(0, 0, 0)
+spread = 100.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_jqdrw")

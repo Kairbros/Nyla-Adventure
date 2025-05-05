@@ -1,0 +1,12 @@
+[gd_resource type="BoxMesh" load_steps=2 format=3 uid="uid://csotivkel0vrw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srp4b"]
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0, 0.443137, 0.329412, 1)
+rim_enabled = true
+refraction_scale = 1.0
+
+[resource]
+material = SubResource("StandardMaterial3D_srp4b")
+size = Vector3(0.1, 0.1, 0.1)
