@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=4 uid="uid://3yjqh5hjpvtr"]
 
-[ext_resource type="Script" path="res://Recursos/Scripts/Terreno/HojaColganteControl.cs" id="1_msf2q"]
+[ext_resource type="Script" uid="uid://c7xad54khqvtj" path="res://Recursos/Scripts/Terreno/HojaColganteControl.cs" id="1_msf2q"]
 [ext_resource type="Texture2D" uid="uid://o6n3h3o1swtg" path="res://Recursos/Texturas/Paletas/pal1.png" id="2_pf5os"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdbud"]
@@ -168,7 +168,7 @@ shape = SubResource("BoxShape3D_155qx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25263, 0, 1.93228)
 shape = SubResource("BoxShape3D_62msv")
 
-[node name="Joint" type="JoltPinJoint3D" parent="."]
+[node name="Joint" type="PinJoint3D" parent="."]
 node_a = NodePath("../Tallo")
 node_b = NodePath("../Hoja")
 

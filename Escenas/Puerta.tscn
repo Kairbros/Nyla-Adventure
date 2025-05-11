@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://dmnjpqkyqw8t2"]
 
-[ext_resource type="Script" path="res://Recursos/Scripts/Terreno/PuertaControl.cs" id="1_agr21"]
+[ext_resource type="Script" uid="uid://cqukkqyp0w13s" path="res://Recursos/Scripts/Terreno/PuertaControl.cs" id="1_agr21"]
 [ext_resource type="Texture2D" uid="uid://o6n3h3o1swtg" path="res://Recursos/Texturas/Paletas/pal1.png" id="1_xegv4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ouwx"]
@@ -48,15 +48,15 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00120544, 0.0133362, 0.606095)
 shape = SubResource("BoxShape3D_topck")
 
-[node name="Joint" type="JoltPinJoint3D" parent="."]
-node_a = NodePath("../Puerta")
-node_b = NodePath("../Visagra")
+[node name="Joint" type="PinJoint3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.701103, -0.0236392)
-
-[node name="JointDos" type="JoltPinJoint3D" parent="."]
 node_a = NodePath("../Puerta")
 node_b = NodePath("../Visagra")
+
+[node name="JointDos" type="PinJoint3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.691793, -0.0236392)
+node_a = NodePath("../Puerta")
+node_b = NodePath("../Visagra")
 
 [node name="Visagra" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0538321)

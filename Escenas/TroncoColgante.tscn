@@ -115,10 +115,10 @@ mesh = SubResource("BoxMesh_rwb8e")
 [node name="Cuerda" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26.2761, -5.97969)
 
-[node name="Joint" type="JoltPinJoint3D" parent="Cuerda"]
+[node name="Joint" type="PinJoint3D" parent="Cuerda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40033, 0)
 node_a = NodePath("../../Soporte")
 node_b = NodePath("../Seg")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40033, 0)
 
 [node name="Seg" type="RigidBody3D" parent="Cuerda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.7969, 0)
@@ -131,10 +131,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda/Seg"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint2" type="JoltPinJoint3D" parent="Cuerda"]
+[node name="Joint2" type="PinJoint3D" parent="Cuerda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.1237, 0)
 node_a = NodePath("../Seg")
 node_b = NodePath("../Seg2")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.1237, 0)
 
 [node name="Seg2" type="RigidBody3D" parent="Cuerda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.37024, 0)
@@ -147,10 +147,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda/Seg2"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint3" type="JoltPinJoint3D" parent="Cuerda"]
+[node name="Joint3" type="PinJoint3D" parent="Cuerda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5097, 0)
 node_a = NodePath("../Seg2")
 node_b = NodePath("../Seg3")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5097, 0)
 
 [node name="Seg3" type="RigidBody3D" parent="Cuerda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.9136, 0)
@@ -163,10 +163,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda/Seg3"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint4" type="JoltPinJoint3D" parent="Cuerda"]
+[node name="Joint4" type="PinJoint3D" parent="Cuerda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.1398, 0)
 node_a = NodePath("../Seg3")
 node_b = NodePath("../Seg4")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.1398, 0)
 
 [node name="Seg4" type="RigidBody3D" parent="Cuerda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.4519, 0)
@@ -179,18 +179,18 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda/Seg4"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint5" type="JoltPinJoint3D" parent="Cuerda"]
+[node name="Joint5" type="PinJoint3D" parent="Cuerda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.7782, 0)
 node_a = NodePath("../Seg4")
 node_b = NodePath("../../Tronco")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.7782, 0)
 
 [node name="Cuerda2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26.2761, 5.96737)
 
-[node name="Joint" type="JoltPinJoint3D" parent="Cuerda2"]
+[node name="Joint" type="PinJoint3D" parent="Cuerda2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40033, 0)
 node_a = NodePath("../../Soporte")
 node_b = NodePath("../Seg")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40033, 0)
 
 [node name="Seg" type="RigidBody3D" parent="Cuerda2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.7969, 0)
@@ -203,10 +203,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda2/Seg"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint2" type="JoltPinJoint3D" parent="Cuerda2"]
+[node name="Joint2" type="PinJoint3D" parent="Cuerda2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.1237, 0)
 node_a = NodePath("../Seg")
 node_b = NodePath("../Seg2")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.1237, 0)
 
 [node name="Seg2" type="RigidBody3D" parent="Cuerda2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.37024, 0)
@@ -219,10 +219,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda2/Seg2"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint3" type="JoltPinJoint3D" parent="Cuerda2"]
+[node name="Joint3" type="PinJoint3D" parent="Cuerda2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5097, 0)
 node_a = NodePath("../Seg2")
 node_b = NodePath("../Seg3")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.5097, 0)
 
 [node name="Seg3" type="RigidBody3D" parent="Cuerda2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.9136, 0)
@@ -235,10 +235,10 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda2/Seg3"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint4" type="JoltPinJoint3D" parent="Cuerda2"]
+[node name="Joint4" type="PinJoint3D" parent="Cuerda2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.1398, 0)
 node_a = NodePath("../Seg3")
 node_b = NodePath("../Seg4")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.1398, 0)
 
 [node name="Seg4" type="RigidBody3D" parent="Cuerda2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.4519, 0)
@@ -251,7 +251,7 @@ mesh = SubResource("BoxMesh_hdf7b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cuerda2/Seg4"]
 shape = SubResource("ConvexPolygonShape3D_6i4fm")
 
-[node name="Joint5" type="JoltPinJoint3D" parent="Cuerda2"]
+[node name="Joint5" type="PinJoint3D" parent="Cuerda2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.7782, 0)
 node_a = NodePath("../Seg4")
 node_b = NodePath("../../Tronco")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.7782, 0)
