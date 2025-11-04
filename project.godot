@@ -16,7 +16,7 @@ warnings/check_invalid_track_paths=false
 
 config/name="Nyla's Enchanted Journey"
 run/main_scene="res://Escenas/Bosque.tscn"
-config/features=PackedStringArray("4.4", "C#", "Forward Plus")
+config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
 
@@ -120,7 +120,7 @@ click={
 
 [physics]
 
-3d/physics_engine="JoltPhysics3D"
+3d/physics_engine="Jolt Physics"
 jolt_3d/collisions/areas_detect_static_bodies=true
 
 [rendering]
